@@ -3,7 +3,7 @@
  */
 
 import { useState } from 'react';
-import { Scissors, ChevronUp, ChevronDown, Gauge } from 'lucide-react';
+import { Scissors, ChevronUp, Gauge } from 'lucide-react';
 import { audioService } from '../../services/audioService';
 import toast from 'react-hot-toast';
 import './ProcessingControls.css';
@@ -168,3 +168,4 @@ export const ProcessingControls: React.FC<ProcessingControlsProps> = ({
     </div>
   );
 };
+
