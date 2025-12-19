@@ -4,8 +4,8 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import { taskService } from '../services/taskService';
-import { Task, TaskStatus } from '../types/task';
-import toast from 'react-hot-toast';
+import { Task } from '../types/task'
+  ;import toast from 'react-hot-toast';
 
 interface UseTaskPollingOptions {
   pollInterval?: number;
@@ -100,3 +100,4 @@ export const useTaskPolling = (
     cancelTask,
   };
 };
+
