@@ -1,0 +1,100 @@
+.audio-player {
+  width: 100%;
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.player-header {
+  margin-bottom: 20px;
+}
+
+.track-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.waveform-container {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  color: #4f46e5;
+}
+
+.control-btn:hover:not(:disabled) {
+  background-color: #eef2ff;
+  transform: scale(1.1);
+}
+
+.control-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.play-pause-btn {
+  width: 56px;
+  height: 56px;
+  background-color: #4f46e5;
+  color: white;
+}
+
+.play-pause-btn:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.stop-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.time-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  font-variant-numeric: tabular-nums;
+}
+
+.current-time {
+  color: #4f46e5;
+}
+
+.time-separator {
+  color: #9ca3af;
+}
+
+.duration {
+  color: #6b7280;
+}
